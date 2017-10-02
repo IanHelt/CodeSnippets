@@ -1,0 +1,13 @@
+<a href="/code">View all Snippets</a>
+
+{{#each snippets}}
+  <ul class="code-list">
+    <li class="code-name">{{title}}</li>
+    <li>Code: {{body}}</li>
+    <li>Notes: {{notes}}</li>
+    <li>Language: {{language}}</li>
+    <li>Tags: {{tags}}</li>
+    <li><a href="/code/{{_id}}/delete">Delete</a></li>
+    <li><a href="/code/{{_id}}/update">Update</a></li>
+  </ul>
+{{/each}}

@@ -1,0 +1,16 @@
+<h2>Update Your Snippet</h2>
+<form action="/code/update" method="post">
+   <input type="hidden" name="id" value="{{_id}}"/>
+   <br/>
+   <input type="text" name="title" value="{{title}}"/>
+   <br/>
+   <input type="textarea" name="body" value="{{body}}"/>
+   <br/>
+   <input type="text" name="notes" value="{{notes}}"/>
+   <br/>
+   <input type="text" name="language" value="{{language}}"/>
+   <br/>
+   <input type="text" name="tag" value="{{tags}}"/>
+   <br/>
+   <input type="submit" value="Update Code Snippet"/>
+ </form>

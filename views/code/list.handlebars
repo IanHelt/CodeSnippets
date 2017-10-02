@@ -1,0 +1,31 @@
+<h1>
+  My Code Snippets
+</h1>
+<a href="/logout/">Logout</a>
+<form action="/code/lang" method="post">
+  <h4>Search by Language</h4>
+  <input type="text" name="languagesearch" value=""/>
+  <input type="submit" value="Search"/>
+</form>
+
+<form action="/code/tags" method="post">
+  <h4>Search by Tag</h4>
+  <input type="text" name="tagsearch" value=""/>
+  <input type="submit" value="Search"/>
+</form>
+
+<h2>Code Snippets: </h2>
+<a href="/code/form/">Create a Snippet</a>
+<div>
+  {{#each code}}
+    <ul class="code-list">
+      <li class="code-name">{{title}}</li>
+      <li>Code: {{body}}</li>
+      <li>Notes: {{notes}}</li>
+      <li>Language: {{language}}</li>
+      <li>Tags: {{tags}}</li>
+      <li><a href="/code/{{_id}}/delete">Delete Snippet</a></li>
+      <li><a href="/code/{{_id}}/update">Update Snippet</a></li>
+    </ul>
+  {{/each}}
+</div>
